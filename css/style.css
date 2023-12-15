@@ -272,6 +272,15 @@ footer {
   color: #fff;
 }
 
+.productos-carrito{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.bloque{
+  margin-bottom: 30px;
+ display: block;
+}
+
 /*Metodos de pago */
 
 .contenedorform{

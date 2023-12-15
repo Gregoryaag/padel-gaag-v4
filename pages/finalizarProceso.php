@@ -8,14 +8,14 @@ require_once 'header.php';
 
 <div class="centrarFinal">
     <div class="bg-success text-center">
-        <h1 class="display-4">¡Pedido Realizado con Exito!</h1>
+        <h1 class="display-4">¡Pedido Realizado con Éxito!</h1>
         <hr class="my-4">
         <p class="lead">¡Estamos verificando el pago, en breve le contactaremos!
         <h4>
         </h4>
         </p>
         <p><br>
-            <strong>Para mejor atención y seguimiento de su compra puede escribir a nuestro WhatsApp</strong>
+            <strong>Para una mejor atención y seguimiento de su compra puede escribir a nuestro WhatsApp</strong>
         </p>
         <br>
         <div class="flex-d">
