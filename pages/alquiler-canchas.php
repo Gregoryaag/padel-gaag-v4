@@ -5,81 +5,136 @@ require_once 'header.php';
 ?>
 
 <head>
-<title>Alquiler de Canchas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Alquiler de Canchas</title>
 </head>
+<body class="light-theme">
 
-    <main>
-        <section class="section">
-            <article class="container">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center justify-md">
-                        <h2>Alquiler de Canchas</h2>
-                    </div>
-                </div>
-                <div>
-                    <div class="container">
-                        <div class="row   justify-content-sm-center caja-cancha">
-                            <div class=" card col-12 col-md-4 d-flex-column  p-3 canchas">
-                                <img class="card-img-top" src="../img/cancha1.png"
-                                    alt="foto de la cancha1 de padel con paredes panoramicas">
-                                <div class="card-body d-flex-column justify-content-start ">
-                                    <h3 class="card-title">Cancha1</h3>
-                                    <div class="d-flex justify-content-between">
-                                        <span class="card-text"> 40$ 2 horas</span>
-                                        <a class="boton" href="../img/Padel-whats.jpeg" target="_blank">Alquilar</a>
-                                    </div>
-                                </div>
+<br>
+<div class="alquilaYa">
+<h3>
+    !Escribenos y reserva nuestras Canchas de Padel de 7 a.m a 11 p.m, 2 horas por tan solo $40. Disfruta del
+    mejor deporte! Reserva ya. !Te esperamos en Sport Gaag!
+    <br>
+    <br>
+    <strong class="advertenciaAnimacion" id="advertencia">Deslice la imagen para ver más canchas >></strong>
+</h3>
+</div>
 
-                            </div>
-                            <div class=" card col-12 col-md-4 d-flex-column canchas p-3">
-                                <img class="card-img-top" src="../img/cancha2.png"
-                                    alt="foto de la cancha2 de padel con cristal ">
-                                <div class=" card-body d-flex-column justify-content-start ">
-                                    <h3 class="card-title">Cancha2</h3>
-                                    <div class="d-flex justify-content-between">
-                                        <span class="card-text"> 40$ 2 horas</span>
-                                        <a class="boton" href="../img/Padel-whats.jpeg" target="_blank">Alquilar</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card col-12 col-md-4 d-flex-column p-3 canchas">
-                                <img class="card-img-top" src="../img/cancha3.png"
-                                    alt="foto de la cancha3 de padel con paredes ">
-                                <div class=" card-body d-flex-column justify-content-start ">
-                                    <h3 class="card-title">Cancha3</h3>
-                                    <div class="d-flex justify-content-between">
-                                        <span class="card-text"> 40$ 2 horas</span>
-                                        <a class="boton" href="../img/Padel-whats.jpeg" target="_blank">Alquilar</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-1"></div>
-                            <div class="col-10 ">
-                                <br>
-                                <p class="text-center">
-                                    !Escribenos y alquila nuestras Canchas de Padel de 7 am a 11 pm y disfruta del
-                                    mejor deporte! Reserva ya. !Te esperamos en Padel Gaag!
-                                </p>
+<div class="swiper mySwiper container">
+    <div class="swiper-wrapper">
 
-                            </div>
-                            <div class="col-1"></div>
-                        </div>
-                    </div>
+        <div class="swiper-slide">
+            <div class="swiper-txt">
+                <p>Cancha #1</p>
+            </div>
+            <img class="" src="../img/canchap1.png" alt="">
+            <a class="boton" href="../img/Padel-whats.jpeg" target="_blank">Reservar</a>
+        </div>
 
-                </div>
-            </article>
-        </section>
-    </main>
-    <?php
-    require_once 'footer.php';
-    ?>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        <div class="swiper-slide">
+            <div class="swiper-txt">
+                <p>Cancha #2</p>
+            </div>
+            <img class="" src="../img/canchap2.png" alt="">
+            <a class="boton" href="../img/Padel-whats.jpeg" target="_blank">Reservar</a>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper-txt">
+                <p>Cancha #3</p>
+            </div>
+            <img class="" src="../img/canchap3.png" alt="">
+            <a class="boton" href="../img/Padel-whats.jpeg" target="_blank">Reservar</a>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper-txt">
+                <p>Cancha #4</p>
+            </div>
+            <img class="" src="../img/canchap4.png" alt="">
+            <a class="boton" href="../img/Padel-whats.jpeg" target="_blank">Reservar</a>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper-txt">
+                <p>Cancha #5</p>
+            </div>
+            <img class="" src="../img/canchap5.png" alt="">
+            <a class="boton" href="../img/Padel-whats.jpeg" target="_blank">Reservar</a>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper-txt">
+                <p>Cancha #6</p>
+            </div>
+            <img class="" src="../img/canchap6.png" alt="">
+            <a class="boton" href="../img/Padel-whats.jpeg" target="_blank">Reservar</a>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper-txt">
+                <p>Cancha #7</p>
+            </div>
+            <img class="" src="../img/canchap7.png" alt="">
+            <a class="boton" href="../img/Padel-whats.jpeg" target="_blank">Reservar</a>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper-txt">
+                <p>Cancha #8</p>
+            </div>
+            <img class="" src="../img/canchap8.png" alt="">
+            <a class="boton" href="../img/Padel-whats.jpeg" target="_blank">Reservar</a>
+        </div>
+
+    </div>
+</div>
+
+<?php
+require_once 'footer.php';
+?>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 80,
+        grabCursor: true,
+        loop: true
+    })
+</script>
+
+<script>
+    //Mensaje de advertencia para hacer uso del carrusel
+    const advertencia = document.getElementById('advertencia');
+
+    setInterval(() => {
+      if (advertencia.style.color === 'greenyellow') {
+        advertencia.style.color = 'red';
+      } else {
+        advertencia.style.color = 'greenyellow';
+      }
+    }, 3000);
+  </script>
+
+  <script>
+    //Tema de blanco y negro
+      const body = document.body;
+    const themeToggle = document.getElementById('theme-toggle');
+    let isDarkTheme = false;
+
+    themeToggle.addEventListener('click', () => {
+      isDarkTheme = !isDarkTheme;
+      if (isDarkTheme) {
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+      } else {
+        body.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+      }
+    });
+  </script>
+
 </body>
 
 </html>

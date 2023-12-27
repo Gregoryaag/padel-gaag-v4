@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/logo-padel-gaag.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/script.js"></script>
 </head>
@@ -19,11 +20,12 @@
             <div class="row d-flex justify-content-center align-items-center ">
                 <div class="col-5 col-lg-2 col-xl-3">
                     <a href="../index.php">
-                        <img src="/img/logo-padel.png" alt="Logo de Padel GAAG" width="45%">
+                        <img src="/img/logo-padel-gaag.png" alt="Logo de Padel GAAG" width="45%">
                     </a>
+                    <button class="btnTema" id="theme-toggle">Cambiar Tema</button>
                 </div>
                 <div class="col-4 col-lg-7 col-xl-3 d-sm-flex  justify-content-sm-center">
-                    <h1>PADEL GAAG</h1>
+                    <h1>Sport GAAG 🎾</h1>
                 </div>
 
                 <div class="col-3 col-lg-3 col-xl-6">

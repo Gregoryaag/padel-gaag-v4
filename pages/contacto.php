@@ -36,7 +36,7 @@ require_once 'header.php';
                     </div>
                     <div class="md-3 col-12 d-flex justify-content-end">
                         <button type="submit" class="botonContacto">Enviar</button>
-                        <!-- <input type="submit" value="Enviar"> -->
+                       
                     </div>
                 </form>
             </div>
@@ -53,6 +53,24 @@ require_once 'header.php';
     <script>
         AOS.init();
     </script>
+
+<script>
+    //Tema de blanco y negro
+      const body = document.body;
+    const themeToggle = document.getElementById('theme-toggle');
+    let isDarkTheme = false;
+
+    themeToggle.addEventListener('click', () => {
+      isDarkTheme = !isDarkTheme;
+      if (isDarkTheme) {
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+      } else {
+        body.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+      }
+    });
+  </script>
 </body>
 
 </html>

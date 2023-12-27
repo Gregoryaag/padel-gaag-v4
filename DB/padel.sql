@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 15-12-2023 a las 21:10:07
+-- Tiempo de generación: 18-12-2023 a las 14:42:03
 -- Versión del servidor: 8.0.31
 -- Versión de PHP: 8.0.26
 
@@ -15,7 +15,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8mb3 */;
 
 --
 -- Base de datos: `padel`
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `detalle_venta` (
   PRIMARY KEY (`id`),
   KEY `id_venta` (`id_venta`),
   KEY `id_producto` (`id_producto`)
-) ENGINE=InnoDB AUTO_INCREMENT=388 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=390 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `detalle_venta`
@@ -431,7 +431,9 @@ INSERT INTO `detalle_venta` (`id`, `id_venta`, `id_producto`, `precio_unitario`,
 (384, 168, 8, '42.00', 1, 0),
 (385, 169, 3, '72.00', 1, 0),
 (386, 169, 7, '75.00', 1, 0),
-(387, 169, 10, '90.00', 1, 0);
+(387, 169, 10, '90.00', 1, 0),
+(388, 170, 14, '42.00', 1, 0),
+(389, 170, 3, '72.00', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -444,9 +446,9 @@ CREATE TABLE IF NOT EXISTS `pagos` (
   `id` int NOT NULL AUTO_INCREMENT,
   `id_venta` int NOT NULL,
   `referencia` int NOT NULL,
-  `metodo_pago` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `metodo_pago` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `pagos`
@@ -496,7 +498,8 @@ INSERT INTO `pagos` (`id`, `id_venta`, `referencia`, `metodo_pago`) VALUES
 (41, 166, 65414812, 'Zinli'),
 (42, 167, 4789, 'Pago movil'),
 (43, 168, 4002, 'Pago movil'),
-(44, 169, 868451346, 'Reserve');
+(44, 169, 868451346, 'Reserve'),
+(45, 170, 123468512, 'Reserve');
 
 -- --------------------------------------------------------
 
@@ -512,7 +515,7 @@ CREATE TABLE IF NOT EXISTS `productos` (
   `precio` float NOT NULL,
   `imagen` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `productos`
@@ -551,7 +554,7 @@ CREATE TABLE IF NOT EXISTS `ventas` (
   `total` decimal(60,2) NOT NULL,
   `status` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=170 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=171 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `ventas`
@@ -726,7 +729,8 @@ INSERT INTO `ventas` (`id`, `clave_transaccion`, `zinli_datos`, `fecha`, `correo
 (166, 'boa3ven1474dmuetfdqijah75q', '', '2023-12-15 12:07:36', 'multi@callofduty', '652.00', 'pendiente'),
 (167, 'boa3ven1474dmuetfdqijah75q', '', '2023-12-15 12:13:44', 'heloo@4x4.com', '612.00', 'pendiente'),
 (168, '2aelqgnr7gk0ianpvpkq6uir47', '', '2023-12-15 13:51:51', 'jesuscasanova2001@gmail.com', '42.00', 'pendiente'),
-(169, 'ved70febcsspfu7hhv0vg59c1e', '', '2023-12-15 17:02:56', 'gaagaag@hotmail.com', '237.00', 'pendiente');
+(169, 'ved70febcsspfu7hhv0vg59c1e', '', '2023-12-15 17:02:56', 'gaagaag@hotmail.com', '237.00', 'pendiente'),
+(170, 'ved70febcsspfu7hhv0vg59c1e', '', '2023-12-18 09:56:31', 'gaag.m23@gmail.com', '114.00', 'pendiente');
 
 --
 -- Restricciones para tablas volcadas

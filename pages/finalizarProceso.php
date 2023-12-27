@@ -29,16 +29,33 @@ require_once 'header.php';
 </div>
 
 <script>
-  // Obtén el botón y la imagen por su id
+ //Muestra las formas de pago 
   var mostrarImagenBtn = document.getElementById("mostrarImagenBtn");
   var imagenWhatsapp = document.getElementById("imagenWhatsapp");
 
-  // Agrega un controlador de eventos al botón para el evento click
   mostrarImagenBtn.addEventListener("click", function() {
-    // Cambia el estilo de la imagen para mostrarla
+    
     imagenWhatsapp.style.display = "block";
   });
 </script>
+
+<script>
+   // Tema de blanco y negro
+      const body = document.body;
+    const themeToggle = document.getElementById('theme-toggle');
+    let isDarkTheme = false;
+
+    themeToggle.addEventListener('click', () => {
+      isDarkTheme = !isDarkTheme;
+      if (isDarkTheme) {
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+      } else {
+        body.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+      }
+    });
+  </script>
 
 <?php
 require_once 'footer.php';

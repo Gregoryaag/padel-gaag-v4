@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -557,3 +559,107 @@ a {
   padding-top: 3%;
 }
 
+/*Inicio Carrusel Alquiler canchas*/
+
+.swiper{
+  margin-top: 40px;
+}
+.swiper-slide{
+  margin-bottom: 50px;
+  border-radius: 15px;
+  height: 420px;
+  width: 295px;
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 100%;
+  border-radius: 15px;
+  height: 420px;
+}
+
+.swiper-txt{
+  position: absolute;
+  padding: 25px;
+}
+
+.swiper-txt h3{
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #222222;
+}
+
+.alquilaYa{
+text-align: center;
+}
+
+.inicioPadel{
+  border: 0px;
+}
+
+/*Fin Carrusel*/
+
+
+.advertenciaAnimacion {
+  color: black;
+  transition: color 1s ease;
+}
+
+.advertenciaAnimacion.rojo {
+  color: red;
+}
+
+/* Animación para cambiar el color de la advertencia cada 3 segundos */
+@keyframes colorChange {
+  0% {
+    color: greenyellow;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: greenyellow;
+  }
+}
+
+.advertenciaAnimacion.animation {
+  animation: colorChange 2s infinite; /* Repetir la animación indefinidamente cada 3 segundos */
+}
+
+/*tema claro y oscuro*/
+
+ body.light-theme {
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+body.dark-theme {
+  background-color: #222;
+  color: #f9f9f9;
+}
+
+.btnTema{
+width: 120px;
+color: white;
+font-family: 'Roboto', sans-serif;
+height: 60px;
+border: none;
+border-radius: 40px;
+background: linear-gradient(to bottom right, #000, #fff);
+transition: all 0.5s;
+animation: moveButton 3s infinite alternate;
+}
+
+.btnTema:hover {
+  font-size: 17px;
+  color: black;
+}
+
+@keyframes moveButton {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}

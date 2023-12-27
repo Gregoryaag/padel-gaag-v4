@@ -30,4 +30,5 @@ function mostrarInformacionPagomovil() {
     containerBinance.style.display = "none";
   }
 
-  /*Finalizar Proceso*/
+ 
+

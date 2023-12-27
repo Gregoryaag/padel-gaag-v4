@@ -7,6 +7,7 @@
     <meta name="description"
         content="Padel House, tu lugar para jugar al padel y adquirir tus palas y zapatos de Padel">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="../img/logo-padel-gaag.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -20,11 +21,12 @@
             <div class="row d-flex justify-content-center align-items-center ">
                 <div class="col-5 col-lg-2 col-xl-3">
                     <a href="index.php">
-                        <img src="/img/logo-padel.png" alt="Logo de Padel GAAG" width="45%">
+                        <img src="/img/logo-padel-gaag.png" alt="Logo de Padel GAAG" width="45%">
                     </a>
+                    <button class="btnTema" id="theme-toggle">Cambiar Tema</button>
                 </div>
                 <div class="col-4 col-lg-7 col-xl-3 d-sm-flex justify-content-sm-center">
-                    <h1>PADEL GAAG</h1>
+                    <h1>Sport GAAG 🎾</h1>
                 </div>
 
                 <div class="col-3 col-lg-3 col-xl-6">
@@ -67,21 +69,28 @@
             <div class="container">
                 <article class="row d-flex justify-content-center align-items-center  text-center">
                     <div class="col-12 text-md-start">
-                        <h2>Alquiler de Canchas</h2>
+                        <h2><a href="/pages/alquiler-canchas.php">Alquiler de Canchas</a></h2>
                     </div>
                     <div class="row d-md-flex justify-content-between">
                         <div class="col-12 col-md-4 d-md-flex justify-content-md-start px-5 px-md-0">
-                            <img class="w-100" src="./img/cancha1.png" alt="cancha de padel">
+                            <button class="inicioPadel"><a href="/pages/alquiler-canchas.php"><img
+                                        class="w-100 imgEfect" src="./img/canchas.png"
+                                        alt="foto tienda de articulos de padel"></a></button>
                         </div>
                         <div class="col-12 col-md-8 d-md-flex align-items-center">
-                            <p>
+                            <p class="parrafos">
                                 Alquila tu cancha para Jugar al Padel desde las 7:00 am hasta las 11:00 pm todos los
                                 dias
                                 del Año
+                                <br>
+                                <br>
+                                <button class="boton"><a href="/pages/alquiler-canchas.php">Ver nuestras 8
+                                        Canchas</a></button>
                             </p>
                         </div>
                     </div>
                 </article>
+                <br>
             </div>
         </section>
 
@@ -90,16 +99,21 @@
             <div class="container">
                 <article class="row d-flex justify-content-center align-items-center  text-center">
                     <div class="col-12 text-md-start">
-                        <h2>Productos</h2>
+                        <h2><a href="/pages/productos.php">Productos</a></h2>
                     </div>
                     <div class="row d-md-flex justify-content-between">
                         <div class="col-12 col-md-4 d-md-flex justify-content-md-start px-5 px-md-0">
-                            <img class="w-100" src="./img/tienda.png" alt="foto tienda de articulos de padel">
+                            <button class="inicioPadel"><a href="/pages/productos.php"><img class="w-100"
+                                        src="./img/tiendasp.png" alt="foto tienda de articulos de padel"></a></button>
                         </div>
                         <div class="col-12 col-md-8 d-md-flex align-items-center">
-                            <p>
+                            <p class="parrafos">
                                 Adquiere nuestros productos de Padel en nuestra Tienda tenemos las mejores palas,
                                 Zapatos y paleteros, con los mejores precios del Mercado
+                                <br>
+                                <br>
+                                <button class="boton"><a href="/pages/productos.php">Ver Productos más
+                                        vendidos</a></button>
                             </p>
                         </div>
                     </div>
@@ -111,15 +125,15 @@
             <div class="container">
                 <article class="row d-flex justify-content-center align-items-center  text-center">
                     <div class="col-12 text-md-start">
-                        <h2>Nosotros</h2>
+                        <h2><a href="/pages/nosotros.php">Nosotros</a></h2>
                     </div>
                     <div class="row d-flex justify-content-between">
                         <div class="col-12 col-md-4 d-md-flex justify-content-md-start px-5 px-md-0">
-                            <img class="w-100" src="./img/canchas_index.png"
-                                alt="foto del lugar de las canchas de padel">
+                            <button class="inicioPadel"><a href="/pages/nosotros.php"><img class="w-100"
+                                        src="./img/nosotros.png" alt="foto tienda de articulos de padel"></a></button>
                         </div>
                         <div class="col-12 col-md-8 d-md-flex align-items-center">
-                            <p>
+                            <p class="parrafos">
                                 ¡Vive la emoción del pádel en nuestras pistas de alquiler! Nuestras instalaciones de
                                 alta calidad están diseñadas tanto para jugadores experimentados como para
                                 principiantes.
@@ -138,6 +152,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <script>
+        //Tema de blanco y negro
+        const body = document.body;
+        const themeToggle = document.getElementById('theme-toggle');
+        let isDarkTheme = false;
+
+        themeToggle.addEventListener('click', () => {
+            isDarkTheme = !isDarkTheme;
+            if (isDarkTheme) {
+                body.classList.remove('light-theme');
+                body.classList.add('dark-theme');
+            } else {
+                body.classList.remove('dark-theme');
+                body.classList.add('light-theme');
+            }
+        });
+    </script>
 </body>
 
 </html>

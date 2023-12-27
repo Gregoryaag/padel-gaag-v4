@@ -8,7 +8,7 @@
                     </div>
                     <div class="d-flex justify-content-center">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62770.88331209018!2d-66.90768255136723!3d10.486456100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a57527ebfb4bb%3A0x4d7d6d3bfd199ed1!2sClub%20Padel%20Venezuela!5e0!3m2!1ses!2sve!4v1702673893274!5m2!1ses!2sve"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62744.11453657894!2d-66.81654395136721!3d10.617652399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a4fade6467d97%3A0xa20bb478b83ebd13!2sCanchas%20de%20Padel!5e0!3m2!1ses!2sve!4v1703682206090!5m2!1ses!2sve"
                             width="200" height="180" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>

@@ -8,7 +8,7 @@ require_once 'header.php';
 ?>
 
 <head>
-<title>Productos</title>
+    <title>Productos</title>
 </head>
 
 <body>
@@ -56,10 +56,10 @@ require_once 'header.php';
                                         value="<?php echo openssl_encrypt($producto['precio'], COD, KEY); ?>">
                                     <input type="hidden" name="cantidad" id="cantidad"
                                         value="<?php echo openssl_encrypt(1, COD, KEY); ?>">
-                
-                                        <button class="boton" name="btnAccion" value="agregar" type="submit"><span
-                                                class="addCarrito">Agregar al
-                                                Carrito</span></button>
+
+                                    <button class="boton" name="btnAccion" value="agregar" type="submit"><span
+                                            class="addCarrito">Agregar al
+                                            Carrito</span></button>
                                 </form>
                             </div>
                         </article>
@@ -105,10 +105,10 @@ require_once 'header.php';
                                         value="<?php echo openssl_encrypt($producto['precio'], COD, KEY); ?>">
                                     <input type="hidden" name="cantidad" id="cantidad"
                                         value="<?php echo openssl_encrypt(1, COD, KEY); ?>">
-                
-                                        <button class="boton" name="btnAccion" value="agregar" type="submit"><span
-                                                class="addCarrito">Agregar al
-                                                Carrito</span></button>
+
+                                    <button class="boton" name="btnAccion" value="agregar" type="submit"><span
+                                            class="addCarrito">Agregar al
+                                            Carrito</span></button>
                                 </form>
                             </div>
                         </article>
@@ -153,10 +153,10 @@ require_once 'header.php';
                                         value="<?php echo openssl_encrypt($producto['precio'], COD, KEY); ?>">
                                     <input type="hidden" name="cantidad" id="cantidad"
                                         value="<?php echo openssl_encrypt(1, COD, KEY); ?>">
-                
-                                        <button class="boton" name="btnAccion" value="agregar" type="submit"><span
-                                                class="addCarrito">Agregar al
-                                                Carrito</span></button>
+
+                                    <button class="boton" name="btnAccion" value="agregar" type="submit"><span
+                                            class="addCarrito">Agregar al
+                                            Carrito</span></button>
                                 </form>
                             </div>
                         </article>
@@ -174,6 +174,24 @@ require_once 'header.php';
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <script>
+        //Tema blanco y negro
+        const body = document.body;
+        const themeToggle = document.getElementById('theme-toggle');
+        let isDarkTheme = false;
+
+        themeToggle.addEventListener('click', () => {
+            isDarkTheme = !isDarkTheme;
+            if (isDarkTheme) {
+                body.classList.remove('light-theme');
+                body.classList.add('dark-theme');
+            } else {
+                body.classList.remove('dark-theme');
+                body.classList.add('light-theme');
+            }
+        });
+    </script>
 </body>
 
 </html>

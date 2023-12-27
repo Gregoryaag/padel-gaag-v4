@@ -4,7 +4,7 @@ ini_set('SMTP', 'smtp.gmail.com');
 ini_set('smtp_port', 465);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Obtén los datos del formulario
+    //datos del formulario
     $nombre = $_POST['nombre'];
     $telefono = $_POST['telefono'];
     $correo = $_POST['correo'];
@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mensaje .= "Correo: $correo\n";
     $mensaje .= "Información: $informacion\n";
 
-    // Envía el correo
+    // Envia el correo
     $headers = 'From: ' . $correo . "\r\n" .
                'Reply-To: ' . $correo . "\r\n" .
                'X-Mailer: PHP/' . phpversion();

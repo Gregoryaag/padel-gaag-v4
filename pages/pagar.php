@@ -68,7 +68,7 @@ VALUES (NULL,:id_venta, :id_producto, :precio_unitario, :cantidad, '0');");
 
         <div>
 
-            <div class="tituloform">Seleccione su Método de Pago</div>
+            <div class="tituloform">Seleccione el Método de Pago</div>
             <div class="cajaBotonesPago">
 
                 <div>
@@ -139,11 +139,13 @@ VALUES (NULL,:id_venta, :id_producto, :precio_unitario, :cantidad, '0');");
 
                             <div class="mt-2">
                                 <input type="text" name="metodo_pago" value="Pago movil" style="display: none;">
-                                <input type="text" name="id_venta" value="<?php echo $idVenta ?>" style="display: none;">
-                                <button type="submit" class="botonpagoform" id="botonReportarPagoMovil">Reportar Pago</button>
+                                <input type="text" name="id_venta" value="<?php echo $idVenta ?>"
+                                    style="display: none;">
+                                <button type="submit" class="botonpagoform" id="botonReportarPagoMovil">Reportar
+                                    Pago</button>
                             </div>
                 </form>
-              
+
             </div>
         </div>
 
@@ -225,94 +227,95 @@ VALUES (NULL,:id_venta, :id_producto, :precio_unitario, :cantidad, '0');");
 </form>
 
 <script>
+    //Envia la informacion seleccionada a la base de datos
     //PagoMovil
-  document.getElementById("formularioPagoMovil").addEventListener("submit", function(event) {
-    event.preventDefault();
+    document.getElementById("formularioPagoMovil").addEventListener("submit", function (event) {
+        event.preventDefault();
 
-    var formData = new FormData(this);
+        var formData = new FormData(this);
 
-    $.ajax({
-      url: "procesarPago.php",
-      type: "POST",
-      data: formData,
-      processData: false,
-      contentType: false,
-      success: function(response) {
+        $.ajax({
+            url: "procesarPago.php",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
 
-        window.location.href = "finalizarProceso.php";
-      },
-      error: function(xhr, status, error) {
-        console.error(error);
+                window.location.href = "finalizarProceso.php";
+            },
+            error: function (xhr, status, error) {
+                console.error(error);
 
-      }
+            }
+        });
     });
-  });
 
-  //Binance
-  document.getElementById("formularioPagoBinance").addEventListener("submit", function(event) {
-    event.preventDefault();
+    //Binance
+    document.getElementById("formularioPagoBinance").addEventListener("submit", function (event) {
+        event.preventDefault();
 
-    var formData = new FormData(this);
+        var formData = new FormData(this);
 
-    $.ajax({
-      url: "procesarPago.php",
-      type: "POST",
-      data: formData,
-      processData: false,
-      contentType: false,
-      success: function(response) {
-    
-        window.location.href = "finalizarProceso.php";
-      },
-      error: function(xhr, status, error) {
-        console.error(error);
-      }
+        $.ajax({
+            url: "procesarPago.php",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+
+                window.location.href = "finalizarProceso.php";
+            },
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        });
     });
-  });
 
-  //Reserve
-  document.getElementById("formularioPagoReserve").addEventListener("submit", function(event) {
-    event.preventDefault();
+    //Reserve
+    document.getElementById("formularioPagoReserve").addEventListener("submit", function (event) {
+        event.preventDefault();
 
-    var formData = new FormData(this);
+        var formData = new FormData(this);
 
-    $.ajax({
-      url: "procesarPago.php",
-      type: "POST",
-      data: formData,
-      processData: false,
-      contentType: false,
-      success: function(response) {
-    
-        window.location.href = "finalizarProceso.php";
-      },
-      error: function(xhr, status, error) {
-        console.error(error);
-      }
+        $.ajax({
+            url: "procesarPago.php",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+
+                window.location.href = "finalizarProceso.php";
+            },
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        });
     });
-  });
 
     //Zinli
-    document.getElementById("formularioPagoZinli").addEventListener("submit", function(event) {
-    event.preventDefault();
+    document.getElementById("formularioPagoZinli").addEventListener("submit", function (event) {
+        event.preventDefault();
 
-    var formData = new FormData(this);
+        var formData = new FormData(this);
 
-    $.ajax({
-      url: "procesarPago.php",
-      type: "POST",
-      data: formData,
-      processData: false,
-      contentType: false,
-      success: function(response) {
-    
-        window.location.href = "finalizarProceso.php";
-      },
-      error: function(xhr, status, error) {
-        console.error(error);
-      }
+        $.ajax({
+            url: "procesarPago.php",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+
+                window.location.href = "finalizarProceso.php";
+            },
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        });
     });
-  });
 </script>
 
 </div>
