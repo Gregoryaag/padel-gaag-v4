@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-12 col-sm-6 d-flex flex-column ">
                     <div class="footer-logo">
-                        <img src="../img/logo-padel.png" width="80px" alt="Logo">
+                        <img src="../img/logo-padel-gaag.png" width="80px" alt="Logo">
                     </div>
                     <div class="d-flex justify-content-center">
                         <div class="ul-footer">
